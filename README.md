@@ -1,7 +1,7 @@
 
 <h1 align="center">#7 Jogos JavaScript</h1>
 
-## Link: <a href="https://guibublitz.github.io/ProjetoDK5/">Clique aqui para abir o projeto no seu navegador</a>.
+## Link: <a href="">Clique aqui para abir o projeto no seu navegador</a>.
 #### Desenvolvendo jogos do zero com JavaScript puro! As <a href="https://www.youtube.com/watch?v=lhNdUVh3qCc">aulas</a> deste curso estão disponíveis gratuitamente no canal <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp.org</a> do <a href="https://www.youtube.com/">Youtube</a>,
 
 
