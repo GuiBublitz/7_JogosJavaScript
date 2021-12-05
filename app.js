@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
             img: 'img/icons8-swift-96.png'
         }
     ]
-
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid');
+    const bg = document.querySelector('.bg');
     const resultDisplay = document.querySelector('#result')
     var cardsChosen = [];
     var cardsChosenId = [];
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function createBoard(){
         for(let i = 0; i < cardArray.length; i++){
             var card = document.createElement('img')
-            card.setAttribute('src', 'img/icons8-yellow-square-96.png')
+            card.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPHg7eEC2CGfBrtvdJuB2vsjMGfgKhD2e6g&usqp=CAU')  
             card.setAttribute('data-id', i)
             card.addEventListener('click',flipcard)
             grid.appendChild(card)
@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const optionTwoId = cardsChosenId[1]
         if(cardsChosen[0] === cardsChosen[1]){
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'img/icons8-white-large-square-96.png')  
-            cards[optionTwoId].setAttribute('src', 'img/icons8-white-large-square-96.png')  
+            cards[optionOneId].setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/6343/6343515.png')
+            cards[optionTwoId].setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/6343/6343515.png')  
             cardsWon.push(cardsChosen)
         } else{
-            cards[optionOneId].setAttribute('src', 'img/icons8-yellow-square-96.png')  
-            cards[optionTwoId].setAttribute('src', 'img/icons8-yellow-square-96.png') 
+            cards[optionOneId].setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPHg7eEC2CGfBrtvdJuB2vsjMGfgKhD2e6g&usqp=CAU')  
+            cards[optionTwoId].setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPHg7eEC2CGfBrtvdJuB2vsjMGfgKhD2e6g&usqp=CAU') 
             alert('Sorry, try again')
         }
         cardsChosen = []
@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         resultDisplay.textContent = cardsWon.length
         if(cardsWon.length === cardArray.length/2){
             resultDisplay.textContent = 'Congratulations! You found them all!'
+            bg.setAttribute('style','background-image: url("https://c.tenor.com/2butBxs8FYkAAAAM/celebrate-happy.gif");')
+            grid.setAttribute('style', 'display:none;')
         }
     }
     function flipcard(){
