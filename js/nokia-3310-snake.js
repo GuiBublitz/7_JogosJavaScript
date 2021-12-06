@@ -81,6 +81,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             direction = +width 
         }
     }
-    document.addEventListener('keyup', control)
+    document.addEventListener('keydown', control)
     startBtn.addEventListener('click', startGame)
 })
