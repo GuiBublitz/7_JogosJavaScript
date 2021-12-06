@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div')
-    const result = document.querySelector('#result')
+    const result1 = document.querySelector('#result1')
+    const result2 = document.querySelector('#result2')
     const displayCurrentPlayer = document.querySelector('#current-player')
     let currentPlayer = 1
 
@@ -102,9 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const square4 = squares[winningArrays[y][3]]
 
             if(square1.classList.contains('player-one') && square2.classList.contains('player-one') && square3.classList.contains('player-one') && square4.classList.contains('player-one')){
-                result.innerHTML = "Player one Wins"
+                result1.innerHTML = "Player one Wins"
             }else if(square1.classList.contains('player-two') && square2.classList.contains('player-two') && square3.classList.contains('player-two') && square4.classList.contains('player-two')){
-                result.innerHTML = "Player two Wins"
+                result2.innerHTML = "Player two Wins"
             }
         }
     }
