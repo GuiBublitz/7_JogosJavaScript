@@ -41,8 +41,8 @@ nav li{
 }
 
 .square{
-    width: 200px;
-    height: 200px;
+    width: 33.333%;
+    height: 33.333%;
     border-style: solid;
     border-color: black;
 }
@@ -71,4 +71,19 @@ h2{
 .mole{
     background-image: url('https://cdn-icons-png.flaticon.com/128/5050/5050857.png');
     background-size: cover;
+    background-position: center;
+}
+@media(max-width:650px){
+    nav{
+        width: 95%;
+    }
+    header{
+        
+        padding: 30px 0;
+        width: 100%;
+    }
+    .grid{
+        width: 95%;
+        height: 400px;
+    }
 }
