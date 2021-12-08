@@ -7,7 +7,7 @@ body{
    background: rgb(30, 30, 30);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    padding: 0 0 100px 0;
+    padding: 0 0 200px 0;
 }
 header{
     padding: 30px;
@@ -21,6 +21,7 @@ nav{
     justify-content: center;
     list-style: none;
 }
+
 nav a{
     color: white;
     font-weight: bold;
@@ -51,18 +52,36 @@ h3{
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-    height: 75vh;
-}
-
-img{
-    width:25%;
-    height:25vh;
+    height: 100%;
 }
 .bg{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    width: 65%;
-    height: 75vh;
+    width: 90vw;
+    max-width: 900px;
+    height: 65vw;
+    max-height: 900px;
     margin: 0 auto;
+}
+img{
+    width:25%;
+    height:33.3333%;
+}
+@media(max-width:600px){
+    img{
+        width:33.3333%;
+        height:25%;
+    }
+    .bg{
+        height: 60vh;
+    }
+}
+@media(max-width: 350px){
+    header{
+        padding:30px 0;
+    }
+    nav{
+        width: 95%;
+    }
 }
