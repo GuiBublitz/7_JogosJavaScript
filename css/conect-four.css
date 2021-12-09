@@ -92,6 +92,13 @@ h3{
         width: 95%;
         min-height: 300px;
         height: 450px;
+
+    }
+    header{
+        padding: 30px 0;
+    }
+    nav{
+        width: 95%;
     }
 }
 @media( max-width: 450px){
